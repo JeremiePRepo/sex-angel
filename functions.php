@@ -122,6 +122,14 @@ add_action( 'widgets_init', 'sex_angel_widgets_init' );
 function sex_angel_scripts() {
 	wp_enqueue_style( 'sex_angel-style', get_stylesheet_uri() );
 
+	wp_enqueue_style( 'sex_angel-c-style', get_stylesheet_uri() . christophe.css );
+
+	wp_enqueue_style( 'sex_angel-j-style', get_stylesheet_uri() . jeremie.css );
+
+	wp_enqueue_style( 'sex_angel-m-style', get_stylesheet_uri() . mathieu.css );
+
+	wp_enqueue_style( 'sex_angel-t-style', get_stylesheet_uri() . thomas.css );
+
 	wp_enqueue_script( 'sex_angel-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'sex_angel-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
